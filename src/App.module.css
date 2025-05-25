@@ -1,0 +1,139 @@
+/* Reset and base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f9fafb; /* very light gray */
+  color: #1e293b; /* dark slate */
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.profileImage {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+
+.nameTitle {
+  flex: 1;
+}
+
+.nameTitle h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.nameTitle p {
+  color: #64748b;
+  font-size: 1.1rem;
+  margin-top: 0.25rem;
+}
+
+/* Summary */
+.summary {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* Contact Links */
+.contactLinks {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contactLinks a {
+  text-decoration: none;
+  color: #3b82f6;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.contactLinks a:hover {
+  color: #2563eb;
+}
+
+/* Projects */
+.projects {
+  margin-top: 3rem;
+}
+
+.projectCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.05);
+  margin-bottom: 1.8rem;
+  transition: box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.projectCard:hover {
+  box-shadow: 0 6px 18px rgb(0 0 0 / 0.12);
+}
+
+.projectTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1e293b;
+}
+
+.projectDescription {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Button */
+.button {
+  margin-top: 2rem;
+  background-color: #3b82f6;
+  color: white;
+  padding: 0.65rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profileImage {
+    margin-bottom: 1rem;
+  }
+}
