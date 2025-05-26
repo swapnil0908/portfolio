@@ -3,24 +3,31 @@ import styles from "./App.module.css";
 import profilePic from "./assets/profile.jpg"; // adjust your path
 
 const personalInfo = {
-  name: "John Doe",
+  name: "Swapnil Kharche",
   title: "Software Engineer",
   summary:
-    "Passionate developer with 5+ years of experience building web and mobile apps. Skilled in React, Node.js, and cloud technologies.",
-  email: "john.doe@example.com",
-  linkedin: "https://linkedin.com/in/johndoe",
-  github: "https://github.com/johndoe",
+    "Software engineer with expertise in wafer scheduling, system integration, and cloud-based solutions. Strong background in planning and aligning engineering work with business priorities. Experienced in C++, Java, and automation, with a history of cross-team collaboration at Applied Materials and consulting firms.",
+  email: "swapnil9.kharche.com",
+  linkedin: "https://www.linkedin.com/in/swapnil-kharche-09/",
+  github: "https://github.com/swapnil0908",
 };
 
 const projects = [
   {
-    title: "Awesome Portfolio",
-    description: "Built a React portfolio website to showcase my projects.",
+    title: "Kinect based posture detection",
+    description: "This project uses the Kinect v2 sensor and skeleton tracking algorithms for real-time human pose estimation. It employs techniques like inverse kinematics and machine learning to capture full-body posture and joint movements. Designed for motion capture, activity recognition, and human-computer interaction, it handles complex poses, body constraints, and dynamic backgrounds. The framework is extendable for gait analysis and long-term tracking.",
+    github: "https://github.com/swapnil0908/Kinect-Skeleton-Tracking"
   },
   {
-    title: "Chat App",
-    description: "Real-time chat application using Socket.io and Node.js.",
+    title: "Portfolio Website",
+    description: "My personal portfolio built with React and styled components.",
+    github: "https://github.com/yourusername/portfolio"
   },
+  {
+    title: "Task Manager",
+    description: "A full-stack to-do list with Node.js, Express, and MongoDB.",
+    github: "https://github.com/yourusername/task-manager"
+  }
 ];
 
 export default function App() {
